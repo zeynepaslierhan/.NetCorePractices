@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VnM3O3epVIJ4Lx9k/6GZbBJigQjgoZBDbGGC67X4UoRZIx6gEXOGcTjt/jMrBrELp3cJCtpvwxtI5RT+qNFFOA==",
+  "dgSpecHash": "ecrjy7zMR4MM9EEdXUxeIqlAW/x+USoRIzxzL0TyLXY8Xw7hWNvkEOEDfKxvCG713vjXR70QjEHh5DFmZPlFow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zerha\\source\\repos\\NetCoreWebApp1\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\zerha\\Documents\\GitHub\\.NetCorePractices\\NetCoreWebApp1\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

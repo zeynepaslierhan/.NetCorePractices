@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k8xcd6QYdgFg4KDc7sn0PlakkIZXKZF4Nc42eRVakD+C2Et4sAHByTUnpxA3NsFEb03fHIynFh+cRiIrEPAswQ==",
+  "dgSpecHash": "+NLiyF+p/Y7J2nm4ocoXvw5+UknfI7hZsGr/d2LJ26VBpdpvKdO9MbjgKFZQQytlAIPUUnZn71BMuONYg2oFDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zerha\\source\\repos\\NetCoreWebApp1\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\zerha\\Documents\\GitHub\\.NetCorePractices\\NetCoreWebApp1\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

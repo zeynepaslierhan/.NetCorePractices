@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IOVdOyJl/7T9S0BVwg7TezEZQrVXdKuC7MM3xSq2BXq5r7dSrMgG+CBJ1ke04dx+KwykbgyrXXXKyKUKLqC79g==",
+  "dgSpecHash": "FikH6K+E5qgDecq6DxU/HtCQGToHHD6REQCe1bBxtMpxtp+j+wUk8Ew9e4NBP+TcMwVFeI8URchxLuZvZzDYgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zerha\\source\\repos\\NetCoreWebApp1\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\zerha\\Documents\\GitHub\\.NetCorePractices\\NetCoreWebApp1\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

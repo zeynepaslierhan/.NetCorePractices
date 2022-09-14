@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,11 @@ namespace NetCoreWebApp1.Controllers
 {
     public class BlogController : Controller
     {
+        BlogManager bm = new BlogManager(new EFBlogRepository());
         public IActionResult Index()
         {
-            return View();
+            var values = bm.GetBlogListWithCategory();
+            return View(values);
         }
     }
 }

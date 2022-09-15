@@ -41,6 +41,26 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 8. Veritabanında Categories tablosuna örnek veriler eklendi.
 
+[.Net Core ile Blog Sitesi Oluşturma / PART 3](https://www.youtube.com/watch?v=J1rb2JNKTYU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=3) *içeriği*:
+
+1. Category view içersinde görünür bir sonuç elde etmek için tablo bilgilerine erişim sağlanılıyor. (ilerde bu kısmı kullanmayacağız amaç denemek)
+2. Tema işlemleri başladı: UserLayout oluşturuldu.Hazır alınan temanın klasör uzantıları düzenlendi. Kullanacağımız layout partialview bölümlerine ayrıldı. 
+3. Business Layerda: IBlogService oluşturuldu. IBlogService'den miras alınarak BlogManager oluşturuldu.
+4. BlogController oluşturuldu. Blog View oluşturulup düzenlendi.
+5. Veritabanına örnek blog verileri eklendi.
+6. Blog yazılarına ait Kategorilerin isimlerini görüntülemek için IBlogServide'e  yeni fonksiyon eklendi. Dolayısıyla BlogManager da düzenlendi.
+7. BlogControllerda istenilen veriyi almak için yeni oluşturulan fonksiyondan alınan veriler kullanıldı.
+
+[.Net Core ile Blog Sitesi Oluşturma / PART 4](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
+
+1. BlogController içerisine BlogReadAll action'ı eklendi. 
+2. View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
+3. BlogManager'a  GetBlogById fonksiyonu eklendi. (IGenericDal'da oluşturulan fonksiyona IBlogDal'ın miras alması sebebiyle erişildi.)
+4. BlogControllerda BlogReadAll action'ı düzenlenip view oluşturuldu.
+5. BlogReadAll View2ı için tema seçilip içeriği düzenlendi. İlgili id'ye göre blog yazısını gösterecek şekilde ayarlandı.
+6. CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
+7. BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
+
 ## Kaynakça
 
 1. [Murat Yücedağ Proje Kampı](https://www.youtube.com/playlist?list=PLKnjBHu2xXNNkinaVhPqPZG0ubaLN63ci)

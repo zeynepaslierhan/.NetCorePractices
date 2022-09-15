@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fIqpC+VDhiHfFRdJPc1BBoOb8TbVGkOcwks3HnbIk+1u90ygh1fl4cAjBMDokndJ3Cj7M7rOQx2Oa2STL5bVog==",
+  "dgSpecHash": "sQbtVI9e9Em/NVWGEj1/mGF4ErckMP0G9usYlQOMxs4RKx00b7OsHxqTcH5QlAEF9B+5E0P02gKe28IRhLXRKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zerha\\Desktop\\EntityFrameworkPractices1\\EntityFrameworkPractices1\\EntityFrameworkPractices1.csproj",
+  "projectFilePath": "C:\\Users\\zerha\\Documents\\GitHub\\.NetCorePractices\\EntityFrameworkPractices\\EntityFrameworkPractices1\\EntityFrameworkPractices1\\EntityFrameworkPractices1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zerha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\zerha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -28,4 +28,4 @@ Instagram hesabımdan oluşturduğum proje ve pratiklerin teorik kısımlarını
 
     <img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/.Net%20Core%20Youtube%20k%C3%BC%C3%A7%C3%BCk%20resim.jpg" width="200" alt=".NetCoreWebApp Practices"/>
 
-    **Youtube videosu:** [Entity Framework Practices-1 / Software Developer Archive](https://www.youtube.com/watch?v=cPpfsINyRCs&t=2s&ab_channel=SoftwareDeveloperArchive) 
+    **Youtube videosu:** [xxxxxxxxxxxxxxxxxxxx](https://www.youtube.com/watch?v=cPpfsINyRCs&t=2s&ab_channel=SoftwareDeveloperArchive) 

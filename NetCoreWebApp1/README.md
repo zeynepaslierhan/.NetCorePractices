@@ -23,7 +23,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 5. Migrations ve veritabanı işlemleri başladı.
 
-[.Net Core ile Blog Sitesi Oluşturma / PART 2](https://www.youtube.com/watch?v=Y7pg4vaoNdY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=2) *içeriği*:
+[**.Net Core ile Blog Sitesi Oluşturma / PART 2**](https://www.youtube.com/watch?v=Y7pg4vaoNdY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=2) *içeriği*:
 
 1. Blog ve Category arasında ilişki kuruldu, migration işlemlerinden sonra veritabanına yansıtıldı.
 
@@ -41,7 +41,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 8. Veritabanında Categories tablosuna örnek veriler eklendi.
 
-[.Net Core ile Blog Sitesi Oluşturma / PART 3](https://www.youtube.com/watch?v=J1rb2JNKTYU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=3) *içeriği*:
+[**.Net Core ile Blog Sitesi Oluşturma / PART 3**](https://www.youtube.com/watch?v=J1rb2JNKTYU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=3) *içeriği*:
 
 1. Category view içersinde görünür bir sonuç elde etmek için tablo bilgilerine erişim sağlanılıyor. (ilerde bu kısmı kullanmayacağız amaç denemek)
 2. Tema işlemleri başladı: UserLayout oluşturuldu.Hazır alınan temanın klasör uzantıları düzenlendi. Kullanacağımız layout partialview bölümlerine ayrıldı. 
@@ -51,7 +51,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 6. Blog yazılarına ait Kategorilerin isimlerini görüntülemek için IBlogServide'e  yeni fonksiyon eklendi. Dolayısıyla BlogManager da düzenlendi.
 7. BlogControllerda istenilen veriyi almak için yeni oluşturulan fonksiyondan alınan veriler kullanıldı.
 
-[.Net Core ile Blog Sitesi Oluşturma / PART 4](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
+[**.Net Core ile Blog Sitesi Oluşturma / PART 4**](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
 
 1. BlogController içerisine BlogReadAll action'ı eklendi. 
 2. View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
@@ -60,6 +60,11 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 5. BlogReadAll View2ı için tema seçilip içeriği düzenlendi. İlgili id'ye göre blog yazısını gösterecek şekilde ayarlandı.
 6. CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
 7. BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 5**]() *içeriği*:
+1. BusinessLayerda: ICommentService oluşturuldu. ICommentService'dan kalıtım alınarak CommentManager oluşturuldu.
+2. CommentController içerisinde CommentListByBlog action'ı ve view'ı düzenlendi.
+3. Veritabanında örnek yorum verileri girildi.
 
 ## Kaynakça
 

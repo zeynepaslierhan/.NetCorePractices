@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,11 +23,24 @@ namespace NetCoreWebApp1.Controllers
         [HttpPost]
         public IActionResult Index(Writer w)
         {
-            w.WriterStatus = true;
-            w.WriterAbout = "Deneme";
-            wm.WriterAdd(w);
-
-            return RedirectToAction("Index", "Blog");
+            WriterValidator wv = new WriterValidator();
+            ValidationResult result = wv.Validate(w);
+            if(result.IsValid)
+            {
+                w.WriterStatus = true;
+                w.WriterAbout = "Deneme";
+                wm.WriterAdd(w);
+                return RedirectToAction("Index", "Blog");
+            }
+            else
+            {
+                foreach(var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
+            
         }
     }
 }

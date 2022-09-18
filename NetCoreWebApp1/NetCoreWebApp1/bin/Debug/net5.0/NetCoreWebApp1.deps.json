@@ -36,6 +36,8 @@
           "BusinessLayer": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
+          "FluentValidation": "10.3.3",
+          "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.Design": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",

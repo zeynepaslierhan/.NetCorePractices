@@ -203,3 +203,7 @@ C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\CommentListByBlog\default.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryList\default.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\NetCoreWebApp1.MvcApplicationPartsAssemblyInfo.cs

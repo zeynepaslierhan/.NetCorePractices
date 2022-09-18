@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UbwSgHIaQ0+Y/o4mhaSrpAdiXpWnk6AYcOzhktZKJkbbGusP48BwMCMaTjdaiO0n6heGkh9wf9jfaiSbjGS/ZA==",
+  "dgSpecHash": "V2DUf5CMhtxW24O9OUQTs07jd+IU7Ee3JHDZak8PyuywHbJCUMnWoVHYghoJuaGdWzv6PouiLghPss6QaYi+1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\zerha\\Documents\\GitHub\\.NetCorePractices\\NetCoreWebApp1\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zerha\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\zerha\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\zerha\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
     "C:\\Users\\zerha\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\zerha\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\zerha\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

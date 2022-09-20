@@ -26,8 +26,15 @@ using NetCoreWebApp1.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\Views\_ViewImports.cshtml"
+using EntityLayer.Concrete;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"beca7319f6e4bb31dd42760014211a6b78c6f505", @"/Views/Comment/PartialAddComment.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f42608a33d9ac190fe14ac3b29c09d3487b7f13f", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a4ab36396bdd8ca1cc686a04a082617ba4224c7f", @"/Views/_ViewImports.cshtml")]
     public class Views_Comment_PartialAddComment : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +65,7 @@ using NetCoreWebApp1.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"comment-top\">\r\n                        <h4>Leave a Comment</h4>\r\n                        <div class=\"comment-bottom\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beca7319f6e4bb31dd42760014211a6b78c6f5054174", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beca7319f6e4bb31dd42760014211a6b78c6f5054389", async() => {
                 WriteLiteral("\r\n                                <input class=\"form-control\" type=\"text\" name=\"Name\" placeholder=\"Name\"");
                 BeginWriteAttribute("required", " required=\"", 294, "\"", 305, 0);
                 EndWriteAttribute();

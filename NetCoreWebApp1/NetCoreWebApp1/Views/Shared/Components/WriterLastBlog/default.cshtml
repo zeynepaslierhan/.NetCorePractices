@@ -1,0 +1,23 @@
+﻿@model List<Blog>
+
+<div class="single-gd tech-btm">
+    <h4>Yazarın Son Postları</h4>
+    @foreach(var item in Model)
+     {
+        <div class="blog-grids">
+    
+            <div class="blog-grid-left">
+                <a href="single.html">
+                    <img src="~/WebTemaları/web/images/b1.jpg" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="blog-grid-right">
+
+                <h5>
+                    <a href="~/WebTemaları/web/single.html">@item.BlogContent</a>
+                </h5>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    }
+</div>

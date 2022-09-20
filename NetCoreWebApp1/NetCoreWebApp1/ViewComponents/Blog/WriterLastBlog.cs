@@ -11,9 +11,9 @@ namespace NetCoreWebApp1.ViewComponents.Blog
     public class WriterLastBlog:ViewComponent
     {
         BlogManager bm = new BlogManager(new EFBlogRepository());
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(int id)
         {
-            var values = bm.GetBlogListByWriter(3);
+            var values = bm.GetBlogListByWriter(id);
             return View(values);
         }
     }

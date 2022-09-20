@@ -49,5 +49,6 @@ namespace BusinessLayer.Concrete
         {
             return _blogDal.GetListAll(x => x.BlogID == id);
         }
+
     }
 }

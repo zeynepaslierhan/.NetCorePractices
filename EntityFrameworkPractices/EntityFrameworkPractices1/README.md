@@ -17,5 +17,6 @@ Proje oluşturulduktan sonraki aşamalar:
 
 **Youtube videosu:** [Entity Framework Practices-1 / Software Developer Archive](https://www.youtube.com/watch?v=cPpfsINyRCs&t=2s&ab_channel=SoftwareDeveloperArchive)
 
-Entity Framework için özet bilgiler: 
+Entity Framework için özet bilgiler için
+
 **Instagram**: @softwaredeveloperarchive https://www.instagram.com/softwaredeveloperarchive/

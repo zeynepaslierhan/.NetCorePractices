@@ -16,3 +16,7 @@ Proje oluşturulduktan sonraki aşamalar:
 <img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Entity%20Framework%20Practices.jpg" width="300" alt="Entity Framework Practices"/>
 
 **Youtube videosu:** [Entity Framework Practices-1 / Software Developer Archive](https://www.youtube.com/watch?v=cPpfsINyRCs&t=2s&ab_channel=SoftwareDeveloperArchive)
+
+Entity Framework için özet bilgiler için
+
+**Instagram**: @softwaredeveloperarchive https://www.instagram.com/softwaredeveloperarchive/

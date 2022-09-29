@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace NetCoreWebApp1.ViewComponents.Blog
 {
-    public class WriterLastBlog:ViewComponent
+    public class BlogLastThreePosts : ViewComponent
     {
         BlogManager bm = new BlogManager(new EFBlogRepository());
-        public IViewComponentResult Invoke(int id)
+        public IViewComponentResult Invoke()
         {
-            var values = bm.GetBlogListByWriter(id);
-            return View(values);
+            var results = bm.GetLastThreeBlogs();
+            return View(results);
         }
     }
 }

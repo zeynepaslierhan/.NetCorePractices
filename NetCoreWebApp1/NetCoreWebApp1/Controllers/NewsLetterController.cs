@@ -23,7 +23,7 @@ namespace NetCoreWebApp1.Controllers
         public PartialViewResult SubscribeMail(NewsLetter n)
         {
             n.MailStatus = true;
-            nm.AddNewsLetter(n);
+            nm.TAdd(n);
             return PartialView();
         }
     }

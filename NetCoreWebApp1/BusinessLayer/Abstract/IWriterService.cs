@@ -9,6 +9,5 @@ namespace BusinessLayer.Abstract
 {
     public interface IWriterService : IGenericService<Writer>
     {
-        void WriterAdd(Writer writerService);
     }
 }

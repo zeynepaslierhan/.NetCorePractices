@@ -54,6 +54,16 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 6. Busines Layerda: Blog yazılarına ait Kategorilerin isimlerini görüntülemek için IBlogServide'e  yeni fonksiyon eklendi. Dolayısıyla BlogManager da düzenlendi.
 7. UI katmanında (Projenin ismi olan katman): BlogControllerda istenilen veriyi almak için yeni oluşturulan fonksiyondan alınan veriler kullanıldı.
 
+[**.Net Core ile Blog Sitesi Oluşturma / PART 4**](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
+
+1. UI katmanında (Projenin ismi olan katman): BlogController içerisine BlogReadAll action'ı eklendi. 
+2. Busines Layerda: View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
+3. Busines Layerda: BlogManager'a  GetBlogById fonksiyonu eklendi. (IGenericDal'da oluşturulan fonksiyona IBlogDal'ın miras alması sebebiyle erişildi.)
+4.  UI katmanında (Projenin ismi olan katman): BlogControllerda BlogReadAll action'ı düzenlenip view oluşturuldu. 
+5. UI katmanında (Projenin ismi olan katman): BlogReadAll View2ı için tema seçilip içeriği düzenlendi. İlgili id'ye göre blog yazısını gösterecek şekilde ayarlandı.
+6. UI katmanında (Projenin ismi olan katman): CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
+7. UI katmanında (Projenin ismi olan katman): BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
+
 ***diğer kısımları gelecek...***
 
 ## Kaynakça

@@ -211,3 +211,5 @@ C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\NewsLetter\SubscribeMail.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\BlogLastThreePosts\default.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\ErrorPage\Error404.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs

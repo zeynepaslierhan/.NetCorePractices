@@ -66,19 +66,33 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 [**.Net Core ile Blog Sitesi Oluşturma / PART 5**](https://www.youtube.com/watch?v=XfMq90N7OD0) *içeriği*:
 
-1.  UI layerda: BlogController içerisine BlogReadAll fonksiyonu  eklendi. 
+1. BusinessLayerda: ICommentService oluşturuldu. ICommentService'dan kalıtım alınarak CommentManager oluşturuldu.
 
-2. DataAcces Layerda: View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
+2. BusinessLayerda: CommentManager içerisi düzenleniyor. 
 
-3. Bussines Layerda: BlogManager'a  GetBlogById fonksiyonu eklendi. (IGenericDal'da oluşturulan fonksiyona IBlogDal'ın miras alması sebebiyle erişildi.)
+3.  UI katmanında (Projenin ismi olan katman): CommentController içerisinde CommentManager dan nesne türetilip gerekli işlemler yapıldı. (Buranın içerisinde önceden eklediğimiz PartialView'lar duruyor fakat bunları viewcomponent'e çevireceğiz.)
 
-4. UI Layerda: BlogControllerda BlogReadAll action'ı düzenlenip view oluşturuldu.
+4. Veritabanında örnek yorum verileri girilip View Component çalışmaları için gerekli olmayan tüm klasörler kapatıldı.
 
-5. UI Layerda: BlogReadAll View'ı için tema seçilip içeriği düzenlendi. İlgili id'ye göre blog yazısını gösterecek şekilde ayarlandı.
+5. UI Layer'da: ViewComponent klasörü oluşturuldu. İçerisine CommentsList adında class oluşturuldu.
 
-6. UI Layerda: CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
+6. UI Layer'da: CommentsList  adında oluşturulan class ViewComponent'den miras alarak içeriği oluşturuldu.
 
-7. BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
+7. UI Layerda: View/Shared klasörü içerisine CommentsList adında klasör oluşturuldu. içerisine Razor View eklendi. İsmi "default olarak değiştirildi"
+
+8. UI Layerda: Blog/BlogReadAll.cshtml içerisindeki CommentListByBlog partial view'ı yerine yeni oluşturduğumuz CommentsList View Component'i eklendi
+
+9. UI Layerda: ViewComponents içerisine Comment adında yeni bir klasör oluşturuldu. İçerisine CommentListByBlog class'ı eklenip ViewComponent'den miras alındı.
+
+10. UI Layerda:  CommentListByBlog class'ı içerisi düzenleniyor AMA ekstradan minik düzenlemeler daha yapmak gerektiğinden yorum satırına alındı.
+
+11. UI Layerda: View/Shared klasörü içerisine Components adında klasör oluşturuldu. CommentList de bu klasör içerisine eklendi. Sonra CommentListByBlog adında yeni klasör açılıp içerisine view eklendi.
+
+12. UI Layerda: CommentListByBlog PartialView içerisindeki kodları CommentListByBlog View Compponent'ine eklendi. (Kullanmadığımız kodları ilerleyen zamanlarda düzenleyeceğiz.) Ve içeriği düzenlendi.
+
+13. UI Layerda: Blog id'lerine göre yorumların gelmesi için ilgili controller veview içeriği düzenlendi
+
+14. UI Layerda:  Category kısmı için de View Component oluşturulmaya başlandı. Comment için yapılan işlemlerin aynısı yapıldı.
 
 ***diğer kısımları gelecek...***
 

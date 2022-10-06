@@ -64,6 +64,22 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 6. UI katmanında (Projenin ismi olan katman): CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
 7. UI katmanında (Projenin ismi olan katman): BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
 
+[**.Net Core ile Blog Sitesi Oluşturma / PART 5**](https://www.youtube.com/watch?v=XfMq90N7OD0) *içeriği*:
+
+1.  UI layerda: BlogController içerisine BlogReadAll fonksiyonu  eklendi. 
+
+2. DataAcces Layerda: View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
+
+3. Bussines Layerda: BlogManager'a  GetBlogById fonksiyonu eklendi. (IGenericDal'da oluşturulan fonksiyona IBlogDal'ın miras alması sebebiyle erişildi.)
+
+4. UI Layerda: BlogControllerda BlogReadAll action'ı düzenlenip view oluşturuldu.
+
+5. UI Layerda: BlogReadAll View'ı için tema seçilip içeriği düzenlendi. İlgili id'ye göre blog yazısını gösterecek şekilde ayarlandı.
+
+6. UI Layerda: CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
+
+7. BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
+
 ***diğer kısımları gelecek...***
 
 ## Kaynakça

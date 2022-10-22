@@ -3,9 +3,32 @@
 .Net Core konusunda gelişmek için  Murat Yücedağ'ın .Net Core Proje kampını baz alarak çalıştım. 
 Murat Yücedağ'ın projesinde temiz kod kullanımı ve  n katmanlı mimariyle oluşturulması .NET Core konusunda sağlam bir temel atmamı sağladı.
 
-Murat Yücedağ  .Net Core Proje Kampı: https://www.youtube.com/playlist?list=PLKnjBHu2xXNNkinaVhPqPZG0ubaLN63ci
+## N Katmanlı Mimari
+
+<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/N%20Tier%20Arc.png" width="300" alt="N Tier Arc"/>
+
+Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçilirken .NetCore projesi yapıyorsanız .Net core library’i seçtiğinizden emin olun.
+
+**Entity Layer**, Projede bulunan tablolar ve bunların içinde bulunun sütunlar yer alır.Buradaki yapılar class olarak tutulur.
+
+**Data Access Layer,** veri erişim katmanıdır.Veritabanındaki  **CRUD(Create-Read-Update-Delete)** operasyonlarını içerir. 
+
+**Business Layer,** validasyon(doğrulama) işlemlerinin yapıldığı katmandır.
+
+**Presentation Layer,** sunum UI işlemleri yapılır. diğer deyişle kullanıcı arayüzüdür.
+
+### Katmanlar Arası Referans Alımı
+
+**Entity Layer:** katmanlardan referans almaz çünkü sadece entity’ler (varlıklar) burada oluşturulur ve bunlar diğer katmanlarda kullanılır.
+
+**Data Acces Layer**: Entity Layer’ı referans alır.Çünkü sadece CRUD işlemlerinden ibarettir ve bunlara dahil olacak entityler için sadece Entity Layer katmanını referans alır.
+
+**Business Layer:** Data Acces ve Entity Layer’ı referans alır. 
+
+**Presentation Layer:** Entity, Data Acces, Business Layer. Validasyon kontrolleri, Crud işlemleri ve gereken parametrelerde class’larla alınacağı için entity layer referans alınır.
 
 ---
+
 ## Youtube Kanalından İzleyebilirsiniz
 
 Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.com/channel/UCjyA7k3irGFgjYkuH-QVhfw) youtube kanalıma ekledim. İlerleyen zamanlarda diğer partları yayınlayacağım.

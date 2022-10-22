@@ -117,7 +117,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 11. UI Layer işlemleri, Register View'da düzenlemeler yapıldı. (Şifreyi iki defa kontrol etme kısmını ilerde göstereceğim. İsterseniz githubdan projenin ilerlemiş aşamalarına bakabilirsiniz.)
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 7**](https://www.youtube.com/watch?v=cQgKav7Y4QU) *içeriği*:
+[**.Net Core ile Blog Sitesi Oluşturma / PART 7**](https://www.youtube.com/watch?v=uCEO-MtshnU) *içeriği*:
 
 1. UI katmanında: Login Controller Oluşturulup Login View sayfası eklendi. İstenilen Login şablonu View'a eklenip gerekli düzenlemeler yapıldı. ( Bu kısmın işlemleri ilerleyen zamanlarda yapılacak)
 

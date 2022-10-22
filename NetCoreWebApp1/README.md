@@ -94,6 +94,61 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 14. UI Layerda:  Category kısmı için de View Component oluşturulmaya başlandı. Comment için yapılan işlemlerin aynısı yapıldı.
 
+[**.Net Core ile Blog Sitesi Oluşturma / PART 6**](https://www.youtube.com/watch?v=cQgKav7Y4QU) *içeriği*:
+
+1. UI katmanında: UserLayout'da kullanılan PartialView düzenlendi.
+
+2. UI katmanı işlemleri, RegisterController eklendi.
+
+3. Business Layer işlemleri : IWriterService ve WriterManager oluşturuldu. WriterManager için gerekli yerler düzenlendi. (İlerleyen zamanlarda Generic işlemler bussines layer için de yapılacak)
+
+4. UI katmanı işlemleri, RegisterController düzenlendi. 
+5. UI katmanı işlemleri, Register View oluşturulup düzenlendi.(Noktalı virgül koymadığımdan ilk başta oluşturmamış)
+
+6. Sweet Alert kullanımı için web sitesinden alarm bakıldı. Sonra ilgili kütüphane eklenip Register view düzenlendi.
+
+7. Business Layer işlemleri , Fluent Validation Nuget paketleri eklendi.
+
+8. Business Layer işlemleri , Validation Rules klasörü işlemleri başladı. WriterValidator oluşturulup Register sayfası için istediğimiz kurallar belirlendi.
+
+9. UI Layer işlemleri , Fluent Validation Nuget paketleri eklendi.
+
+10. UI Layer işlemleri , RegisterController'a WriterValidator eklenip gerekli işlemler yapıldı. (Burada yanlış kütüphane eklenip eklenmediğinden emin olmak lazım)
+
+11. UI Layer işlemleri, Register View'da düzenlemeler yapıldı. (Şifreyi iki defa kontrol etme kısmını ilerde göstereceğim. İsterseniz githubdan projenin ilerlemiş aşamalarına bakabilirsiniz.)
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 7**](https://www.youtube.com/watch?v=cQgKav7Y4QU) *içeriği*:
+
+1. UI katmanında: Login Controller Oluşturulup Login View sayfası eklendi. İstenilen Login şablonu View'a eklenip gerekli düzenlemeler yapıldı. ( Bu kısmın işlemleri ilerleyen zamanlarda yapılacak)
+
+2. UI Katmanında: Layout içerisindeki Partial 2 düzenlendi.
+
+3. Entity katmanında: Blog ve Writer arasındaki ilişki kuruldu. Migration dosyasına değişiklik kaydedilip veritabanına yansıtıldı. (Hatayı almamak adına migration içerisindeki nullable true yapıldı.)
+
+4. Bussines Katmanında: IBlogService interface'i içerisine yeni method tanımlandı.  Dolayısıyla BlogManager düzenlendi.
+
+5. UI Katmanında: ViewComponents içerisine Blog klasörü eklenip WriterLastBlog adında yeni class oluşturuldu. Bu class ViewComponent olarak kullanılacağı için ViewComponent'den miras alınıp içeriği düzenlendi.
+
+6. Veritabanına örnek veriler girildi.
+
+7. UI Katmanında: View/Shared/Component içine WriterLastBlog adında yeni klasör oluşturuldu. İçine view eklenip ismi default olarak değiştirildi. İstenilen kısım BlogReadAll view'ı içerisinden alınıp düzenlendi. 
+
+8. UI Katmanında: Çoğunlukla View içeriklerine eklenen klasörü ViewImports içerisine eklendi. İleride sürekli eklemekle tekrardan uğraşmamak adına pratik bir çözümdür. Sonrasında kullanılan view'lardan silindi.
+
+9. UI katmanında: Burada oluşturulan viewcomponent'in id değer alması için işlemler denendi fakat istenildiği gibi çalışmadı. Murat Yücedağın ilerleyen videoalarda bu component yerine yaptığı component onun yerine eklenmeye başladı.
+
+İstenildiği gibi çalışmadığını projenin devamında fark ettiğim için BlogLastThreePosts Componentinin yapılışını sonradan çektim. Videodaki bütünlük bozulmaması adına sonuna ekledim. 
+
+10. UI Katmanında: ViewComponents/Blog içerisine BlogLastThreePost class'ı eklenip içeriği düzenlendi.
+
+11. Bussines katmanında: IblogService ve BlogManager içerisine istenilen method eklenip düzenlendi.
+
+12. UI Katmanında: Component içerisine BlogLastThreePosts adında yeni klasör eklenip default adında view eklendi.
+
+13. UI Katmanında: BlogReadAll View'ı içerisi düzenlendi. 
+
+14. UI Katmanında: WriterLastBlog View'ında kullandığımız cshtml kodları BlogLastThreePosts 'a aktarılıp düzenlendi.
+
 ***diğer kısımları gelecek...***
 
 ## Kaynakça

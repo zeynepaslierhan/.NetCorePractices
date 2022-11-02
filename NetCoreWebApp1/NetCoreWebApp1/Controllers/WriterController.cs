@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace NetCoreWebApp1.Controllers
 {
-    [Authorize]
+    //[Authorize]
+    [AllowAnonymous]
     public class WriterController : Controller
     {
         public IActionResult Index()

@@ -214,3 +214,4 @@ C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\About\SocialMediaAbout.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\WriterLayout.cshtml.g.cs

@@ -27,6 +27,134 @@ Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçil
 
 **Presentation Layer:** Entity, Data Acces, Business Layer. Validasyon kontrolleri, Crud işlemleri ve gereken parametrelerde class’larla alınacağı için entity layer referans alınır.
 
+## Kodlar
+
+### Register işlemi
+
+1. Gerekli Entity’ler entity katmanında tanımlanıp, dataAcces katmanında CRUD işlemleri sağlanır. Business katmanında da gerekli Servis ve manager dosyaları oluşturulur.
+2. RegisterController oluşturulup içeriği düzenlenir.
+    
+    ```csharp
+    public class RegisterController : Controller
+        {
+            WriterManager wm = new WriterManager(new EFWriterRepository());
+            [HttpGet]
+            public IActionResult Index()
+            {
+                return View();
+            }
+    
+            [HttpPost]
+            public IActionResult Index(Writer w)
+            {
+                WriterValidator wv = new WriterValidator();
+                ValidationResult result = wv.Validate(w);
+                if(result.IsValid)
+                {
+                    w.WriterStatus = true;
+                    wm.TAdd(w);
+                    return RedirectToAction("Index", "Blog");
+                }
+                else
+                {
+                    foreach(var item in result.Errors)
+                    {
+                        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    }
+                }
+                return View();
+                
+            }
+    ```
+    
+3. RegisterController’a ait cshtml dosyası düzenlenir. Gerekli bilgilerin alınması için örnek bir kısım:
+    
+    ```csharp
+    @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                        {
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom01">Adınız Soyadınız</label>
+                                    @Html.TextBoxFor(x=>x.WriterName, new {@class="form-control"})
+                                    @Html.ValidationMessageFor(x=>x.WriterName,"",new {@class="text-danger"})
+                                </div>
+    .....
+    ```
+    
+
+### Login işlemleri
+
+#### Controller seviyesinde Login işlemi
+
+1. Startup dosyasına gerekli komutlar eklenir:
+    1. Startup içinde mevcut olan `public void ConfigureServices(IServiceCollection services)` fonksiyon içerisine aşağıdaki kodlar eklenir.
+     ```csharp
+    services.AddMvc(config =>
+                {
+                    var policy = new AuthorizationPolicyBuilder()
+                                        .RequireAuthenticatedUser()
+                                        .Build();
+                    config.Filters.Add(new AuthorizeFilter(policy));
+                });
+    
+                services.AddMvc();
+                services.AddAuthentication(
+                    CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x =>
+                    {
+                        x.LoginPath = "/Login/Index";
+                    });
+    ```
+    2. startup sonunda yer alan `app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");` fonksiyonundan sonra aşağıdaki kod eklenir.
+    
+    ```csharp
+    app.UseAuthentication();
+    ```
+    
+2. LoginController içerisine
+    1. LoginController class’ına [AllowAnonymous] niteliği verilir.
+    2. HttpGet nitelikli fonksiyon belirlendikten sonra HttpPost nitelikli fonksiyon yazılır:
+        
+        ```csharp
+        [HttpPost]
+                public async Task<IActionResult> Index(Writer w)
+                {
+                    Context c = new Context();
+        
+                    var dataValue = c.writers.FirstOrDefault(x => x.WriterMail == w.WriterMail && x.WritePassword == w.WritePassword);
+        
+                    if(dataValue != null)
+                    {
+                        var claims = new List<Claim>
+                        {
+                            new Claim(ClaimTypes.Name, w.WriterMail)
+                        };
+                        var useridentity = new ClaimsIdentity(claims, "a");
+                        ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
+                        await HttpContext.SignInAsync(principal);
+                        return RedirectToAction("Index","Writer"); //Girildikten sonra hangi sayfaya yönlendirilmesi gerekiyorsa onun bilgleri girilir.
+                    }
+                    else
+                    {
+                        return View();
+                    }
+                }
+        ```
+        
+3. LoginController’a ait View’ın cshtml dosyası düzenlenir.
+    1. İçeriğindeki formun özellikleri bu şekilde ayarlanır.
+        
+        ```html
+        <form  method="post">
+        ```
+        
+    2. input bilgilerin içerisine Writer entity’sine uygun özellikler name olarak verilir.
+        
+        ```html
+        ...
+        <input type="email" class="form-control" name="WriterMail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+        ...
+        <input type="password" class="form-control" name="WritePassword" id="exampleInputPassword1" placeholder="" required="">
+        ```
 ---
 
 ## Youtube Kanalından İzleyebilirsiniz

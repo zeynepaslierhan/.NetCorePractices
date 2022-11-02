@@ -300,6 +300,46 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 14. UI Katmanında: WriterLastBlog View'ında kullandığımız cshtml kodları BlogLastThreePosts 'a aktarılıp düzenlendi.
 
+[**.Net Core ile Blog Sitesi Oluşturma / PART 8**](https://www.youtube.com/watch?v=wMxm9SyOpEA) *içeriği*:
+
+1. Entity Katmanında: NewsLetter class'ı oluşturulup içeriği düzenlendi.
+
+2. DataAcces Katmanında: Context içeriği düzenlendi. Migration oluşturulup veritabanına yansıtıldı.
+
+3. UI Katmanında:  NewsLetter adında yeni Controllers oluşturuldu. PartialView oluşturulmak istendiği için gerekli düzenlemeler yapıldı.
+
+4. DataAcces Katmanında: INewsLetterDal ile EFNewsLetterRepository oluşturuldu.
+
+5. Bussines Katmanında: INewsLetterService ile NewsLetterManager oluşturulup düzenlendi.
+
+6. UI Katmanında: NewsLetterController düzenlendi. SubscribeMail View'ı oluşturuldu. BlogReadAll içerisinden istenilen kısımlar alınıp SubscribeMail View'a eklendi.
+
+7. Alınan hatanın giderilmesi için veritabanında önceden eklenmiş olan veriler değiştirip düzenlendi.
+
+8. Oynatma Serisinin 7. PARTINDA:  BlogReadAll sayfasındaki yazara ait son postların istenildiği gibi çalışmadığını görünce düzenledim. Bu kısmı 7. partta yaptığım için o videonun sonuna ekledim. 
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 9**](https://www.youtube.com/watch?v=OY0v4V537hc) *içeriği*:
+
+1. Business Katmanında: Generic hale getirmek için işlemler başladı. IGenericService oluşturulup diğer interface'ler için uygulandı.
+
+2. UI Katmanında: Bussines Katmanında yapılan değişikliklerin nerelere yansıyabileceği düşünüldü.
+
+3. Business Katmanında: Interface'lerde yapılan değişiklik manager sınıflarına yansıdığı için düzenlemeler yapıldı.  (Bu tarz düzenlemeler yaparken github gibi araçlar kullanıyorsanız hata almamanız kolaylaşır. Instagram hesabımdan Git,Github,Gitlab içerikleri yayınlayacağım takipte kalın.. :) )
+
+4. UI Katmanında: ErrorPageControllers eklenip Views eklendi. Kullanılacak şablon kendi views içeriğimize eklendi. 
+
+5. UI Katmanında: ErrorPage için startup içerisi düzenlendi.
+
+6. UI Katmanında : AboutController eklenip View eklendi.
+
+7. Business Katmanında: IAboutService ve AboutManager oluşturuldu.
+
+8. UI Katmanında: AboutController düzenlenip içerisine partail View eklenip cshtml düzenlendi. About sayfasının içeriği düzenlendi.
+
+9. UI Katmanında: Site Genelinde Düzenlemeler Başladı. ISS çalıştırıldığında ilk gelecek ekran blog sitesi olarak ayarlandı. Layout'un yönlendirdiği sayfalar düzenlenip istenmeyen kısımlar kaldırıldı.
+
+10.  UI Katmanında: Layout'un alt kısmı yani partial3 düzenlemeleri bağladı. Buradaki kısımlar için önceden oluşturulmuş viewcomponentler kullanıldı.
+
 ***diğer kısımları gelecek...***
 
 ## Kaynakça

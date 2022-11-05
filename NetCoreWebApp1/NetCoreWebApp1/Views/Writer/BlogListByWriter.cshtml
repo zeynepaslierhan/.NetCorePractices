@@ -1,0 +1,27 @@
+﻿@model List<Blog>
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Yazarın Blogları</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Blog Başlığı</th>
+        <th>Oluşturma Tarihi</th>
+        <th>Kategori</th>
+        <th>Durumu</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.BlogID</td>
+    <td>@item.BlogTitle</td>
+    <td>@item.BlogCreateDate</td>
+    <td>@item.Category.CategoryName</td>
+    <td>@item.BlogStatus</td>
+</tr>
+    }
+</table>
+

@@ -23,6 +23,8 @@ namespace NetCoreWebApp1.Controllers
         {
             return View();
         }
+
+        //Writer Layout Parçaları
         public PartialViewResult WriterSidebar()
         {
             return PartialView();
@@ -31,11 +33,16 @@ namespace NetCoreWebApp1.Controllers
         {
             return PartialView();
         }
+
+        //Yazara Ait Blogların listelendiği sayfa
         public IActionResult BlogListByWriter(int id)
         {
             var values = bm.GetListWithCategoryByWriter(7);
             return View(values);
         }
+
+
+        // Blog Ekleme Sayfası
 
         // BlogAdd sayfasında Kategorilerin listelenmesi için gerekli listeyi veren fonksiyon
         public List<SelectListItem> CategoryListForView()
@@ -81,5 +88,16 @@ namespace NetCoreWebApp1.Controllers
                 return View();
             }
         }
+    
+        // İlgili Blogu silme
+
+
+        public IActionResult DeleteBlog(int id)
+        {
+            var blog = bm.TGetById(id);
+            bm.TDelete(blog);
+            return RedirectToAction("BlogListByWriter", "Writer");
+        }
+    
     }
 }

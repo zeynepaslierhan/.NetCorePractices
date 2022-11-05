@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -35,27 +37,49 @@ namespace NetCoreWebApp1.Controllers
             return View(values);
         }
 
-        [HttpGet]
-        public IActionResult BlogAdd()
+        // BlogAdd sayfasında Kategorilerin listelenmesi için gerekli listeyi veren fonksiyon
+        public List<SelectListItem> CategoryListForView()
         {
-
             List<SelectListItem> categories = (from x in cm.GetList()
                                                select new SelectListItem
                                                {
                                                    Text = x.CategoryName,
                                                    Value = x.CategoryID.ToString()
                                                }).ToList();
-            ViewBag.cv = categories;
+            return categories;
+
+        }
+
+        [HttpGet]
+        public IActionResult BlogAdd()
+        {
+            ViewBag.cv = CategoryListForView();
             return View();
         }
 
         [HttpPost]
         public IActionResult BlogAdd(Blog b)
         {
-            b.BlogStatus = true;
-            b.WriterId = 7; //şimdilik
-            bm.TAdd(b);
-            return RedirectToAction("BlogListByWriter", "Writer");
+            BlogValidator bv = new BlogValidator();
+            ValidationResult result = bv.Validate(b);
+            if (result.IsValid)
+            {
+
+                b.BlogStatus = true;
+                b.WriterId = 7; //şimdilik
+                bm.TAdd(b);
+                return RedirectToAction("BlogListByWriter", "Writer");
+            }
+            else
+            {
+                foreach(var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+
+                ViewBag.cv = CategoryListForView();
+                return View();
+            }
         }
     }
 }

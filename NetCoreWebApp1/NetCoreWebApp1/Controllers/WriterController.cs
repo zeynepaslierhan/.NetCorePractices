@@ -15,5 +15,13 @@ namespace NetCoreWebApp1.Controllers
         {
             return View();
         }
+        public PartialViewResult WriterSidebar()
+        {
+            return PartialView();
+        }
+        public PartialViewResult Writernavbar()
+        {
+            return PartialView();
+        }
     }
 }

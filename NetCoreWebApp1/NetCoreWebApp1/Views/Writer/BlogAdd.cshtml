@@ -1,0 +1,21 @@
+﻿@model EntityLayer.Concrete.Blog
+@{
+    ViewData["Title"] = "BlogAdd";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Blog Ekle</h1>
+
+@using (Html.BeginForm("BlogAdd", "Writer", FormMethod.Post))
+{
+    @Html.Label("Blog Başlığı:")
+    @Html.TextBoxFor(x => x.BlogTitle, "", new { @class = "form-control" })
+
+    @Html.Label("Blog İçeriği:")
+    @Html.TextBoxFor(x => x.BlogContent, "", new { @class = "form-control" })
+
+    @Html.Label("Blog Kategorisi:")
+    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>) ViewBag.cv, new { @class = "form-control" })
+
+    <button class="btn btn-outline-success">Kaydet</button>
+}

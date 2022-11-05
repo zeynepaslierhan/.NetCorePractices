@@ -345,3 +345,5 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 ## Kaynakça
 
 1. [Murat Yücedağ Proje Kampı](https://www.youtube.com/playlist?list=PLKnjBHu2xXNNkinaVhPqPZG0ubaLN63ci)
+2. [Samet Akça ve Rümeysa Çağlar'ın projesi](https://github.com/smtdeveloper/BlogProjeKampi)
+3. [Atilla Akalay'ın projesi](https://github.com/atillakalay/DotNetCoreCamp)

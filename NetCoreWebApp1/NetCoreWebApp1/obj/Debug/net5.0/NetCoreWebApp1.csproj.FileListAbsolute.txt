@@ -217,3 +217,5 @@ C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\WriterLayout.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\WriterSidebar.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\Writernavbar.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterMessageNotification\default.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotifications\default.cshtml.g.cs

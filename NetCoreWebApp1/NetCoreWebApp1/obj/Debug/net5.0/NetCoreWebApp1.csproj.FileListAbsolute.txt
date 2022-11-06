@@ -221,3 +221,4 @@ C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotifications\default.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\BlogListByWriter.cshtml.g.cs
 C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\BlogAdd.cshtml.g.cs
+C:\Users\zerha\Documents\GitHub\.NetCorePractices\NetCoreWebApp1\NetCoreWebApp1\obj\Debug\net5.0\Razor\Views\Writer\BlogEdit.cshtml.g.cs

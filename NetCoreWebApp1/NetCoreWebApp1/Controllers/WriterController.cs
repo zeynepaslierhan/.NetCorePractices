@@ -90,8 +90,6 @@ namespace NetCoreWebApp1.Controllers
         }
     
         // İlgili Blogu silme
-
-
         public IActionResult DeleteBlog(int id)
         {
             var blog = bm.TGetById(id);
@@ -99,5 +97,38 @@ namespace NetCoreWebApp1.Controllers
             return RedirectToAction("BlogListByWriter", "Writer");
         }
     
+        // İlgili blogu güncelleme
+        [HttpGet]
+        public IActionResult BlogEdit(int id)
+        {
+            var values = bm.TGetById(id);
+            ViewBag.cv = CategoryListForView();
+            return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult BlogEdit(Blog b)
+        {
+            BlogValidator bv = new BlogValidator();
+            ValidationResult result = bv.Validate(b);
+            if (result.IsValid)
+            {
+
+                b.BlogStatus = true;
+                b.WriterId = 7; //şimdilik
+                bm.TUpdate(b);
+                return RedirectToAction("BlogListByWriter", "Writer");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+
+                ViewBag.cv = CategoryListForView();
+                return View();
+            }
+        }
     }
 }

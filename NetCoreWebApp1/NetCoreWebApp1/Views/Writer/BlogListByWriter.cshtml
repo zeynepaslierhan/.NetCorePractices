@@ -22,9 +22,9 @@
     <td>@item.Category.CategoryName</td>
     <td>
         @if (item.BlogStatus)
-        {<span class="badge badge-success">Aktif</span> }
+        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-success">Aktif</a> }
         else
-        {<span class="badge badge-secondary">Pasif</span>}
+        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-secondary">Pasif</a>}
     </td>
     <td><a href="/Writer/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-outline-danger">Sil</a></td>
     <td><a href="/Writer/BlogEdit/@item.BlogID" class="btn btn-outline-warning">Güncelle</a></td>

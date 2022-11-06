@@ -43,8 +43,6 @@ namespace NetCoreWebApp1.Controllers
 
 
         // Blog Ekleme Sayfası
-
-        // BlogAdd sayfasında Kategorilerin listelenmesi için gerekli listeyi veren fonksiyon
         public List<SelectListItem> CategoryListForView()
         {
             List<SelectListItem> categories = (from x in cm.GetList()
@@ -56,6 +54,8 @@ namespace NetCoreWebApp1.Controllers
             return categories;
 
         }
+
+        // BlogAdd sayfasında Kategorilerin listelenmesi için gerekli listeyi veren fonksiyon
 
         [HttpGet]
         public IActionResult BlogAdd()
@@ -72,7 +72,7 @@ namespace NetCoreWebApp1.Controllers
             if (result.IsValid)
             {
 
-                b.BlogStatus = true;
+                b.BlogStatus = false;
                 b.WriterId = 7; //şimdilik
                 bm.TAdd(b);
                 return RedirectToAction("BlogListByWriter", "Writer");
@@ -114,7 +114,7 @@ namespace NetCoreWebApp1.Controllers
             if (result.IsValid)
             {
 
-                b.BlogStatus = true;
+                b.BlogStatus = false;
                 b.WriterId = 7; //şimdilik
                 bm.TUpdate(b);
                 return RedirectToAction("BlogListByWriter", "Writer");
@@ -129,6 +129,24 @@ namespace NetCoreWebApp1.Controllers
                 ViewBag.cv = CategoryListForView();
                 return View();
             }
+        }
+    
+        // İlgili blogun aktifliğini değiştirme
+
+        public IActionResult ChangeStatusBlog(int id)
+        {
+            var blog = bm.TGetById(id);
+            if (blog.BlogStatus)
+            {
+                blog.BlogStatus = false;
+            }
+            else
+            {
+                blog.BlogStatus = true;
+            }
+
+            bm.TUpdate(blog);
+            return RedirectToAction("BlogListByWriter");
         }
     }
 }

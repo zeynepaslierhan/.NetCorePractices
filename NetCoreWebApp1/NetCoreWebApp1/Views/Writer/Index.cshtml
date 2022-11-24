@@ -1,10 +1,15 @@
-﻿
+﻿@model List<Writer>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
 <h1>WRITER SAYFASI</h1>
+<p>@ViewBag.mail</p>
+@foreach ( var item in Model)
+            {
+                @item.WriterName
+            }
 <!--
 <div class="page-header">
     <h3 class="page-title"> Basic Tables </h3>

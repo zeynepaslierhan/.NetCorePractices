@@ -4,6 +4,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,11 @@ namespace BusinessLayer.Concrete
         public List<Writer> GetList()
         {
             throw new NotImplementedException();
+        }
+
+        public List<Writer> GetListAll(Expression<Func<Writer, bool>> filter)
+        {
+            return _writerDal.GetListAll(filter);
         }
 
         public void TAdd(Writer t)

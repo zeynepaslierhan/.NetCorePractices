@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -19,25 +20,36 @@ namespace NetCoreWebApp1.Controllers
     {
         BlogManager bm = new BlogManager(new EFBlogRepository());
         CategoryManager cm = new CategoryManager(new EFCategoryRepository());
+        WriterManager wm = new WriterManager(new EFWriterRepository());
+
+        Context c = new Context();
         public IActionResult Index()
         {
-            return View();
+            var _userMail = User.Identity.Name;
+            var values = wm.GetListAll(x => x.WriterMail == _userMail);
+            return View(values);
         }
 
         //Writer Layout Parçaları
         public PartialViewResult WriterSidebar()
         {
-            return PartialView();
+            var _userMail = User.Identity.Name;
+            var values = wm.GetListAll(x => x.WriterMail == _userMail);
+            return PartialView(values);
         }
         public PartialViewResult Writernavbar()
         {
-            return PartialView();
+            var _userMail = User.Identity.Name;
+            var values = wm.GetListAll(x => x.WriterMail == _userMail);
+            return PartialView(values);
         }
 
         //Yazara Ait Blogların listelendiği sayfa
-        public IActionResult BlogListByWriter(int id)
+        public IActionResult BlogListByWriter()
         {
-            var values = bm.GetListWithCategoryByWriter(7);
+            var _userMail = User.Identity.Name;
+            var _userId = c.writers.Where(x => x.WriterMail == _userMail).Select(y => y.WriterId).FirstOrDefault();
+            var values = bm.GetListWithCategoryByWriter(_userId);
             return View(values);
         }
 
@@ -69,11 +81,14 @@ namespace NetCoreWebApp1.Controllers
         {
             BlogValidator bv = new BlogValidator();
             ValidationResult result = bv.Validate(b);
+
+            var _userMail = User.Identity.Name;
+            var _userId = c.writers.Where(x => x.WriterMail == _userMail).Select(y => y.WriterId).FirstOrDefault();
             if (result.IsValid)
             {
 
                 b.BlogStatus = false;
-                b.WriterId = 7; //şimdilik
+                b.WriterId = _userId; 
                 bm.TAdd(b);
                 return RedirectToAction("BlogListByWriter", "Writer");
             }
@@ -111,11 +126,14 @@ namespace NetCoreWebApp1.Controllers
         {
             BlogValidator bv = new BlogValidator();
             ValidationResult result = bv.Validate(b);
+
+            var _userMail = User.Identity.Name;
+            var _userId = c.writers.Where(x => x.WriterMail == _userMail).Select(y => y.WriterId).FirstOrDefault();
             if (result.IsValid)
             {
 
                 b.BlogStatus = false;
-                b.WriterId = 7; //şimdilik
+                b.WriterId = _userId; 
                 bm.TUpdate(b);
                 return RedirectToAction("BlogListByWriter", "Writer");
             }

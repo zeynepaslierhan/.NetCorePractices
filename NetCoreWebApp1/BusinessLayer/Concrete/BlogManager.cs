@@ -4,6 +4,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -62,6 +63,11 @@ namespace BusinessLayer.Concrete
         public List<Blog> GetListWithCategoryByWriter(int id)
         {
             return _blogDal.GetListWithCategoryByWriter(id);
+        }
+
+        public List<Blog> GetListAll(Expression<Func<Blog, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
     }
 }

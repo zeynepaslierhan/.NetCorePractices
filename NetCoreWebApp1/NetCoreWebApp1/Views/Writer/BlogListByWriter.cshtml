@@ -22,25 +22,33 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                <tr>
-                                    <td>
-                                        <img src="assets/images/faces/face1.jpg" class="mr-2" alt="image"> @item.BlogTitle
-                                    </td>
-                                    <td> @item.BlogCreateDate </td>
-                                    <td>
-                                        @item.Category.CategoryName
-                                    </td>
-                                    <td>
-                                        @if (item.BlogStatus)
-                                        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-success">Aktif</a> }
-                                        else
-                                        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-danger">Pasif</a>}
-                                    </td>
-                                    <td><a href="/Writer/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-outline-danger">Sil
-                                        <i class="mdi mdi-delete-sweep"></i></a></td>
-                                    <td><button href="/Writer/BlogEdit/@item.BlogID" class="btn btn-gradient-dark btn-icon-text">Güncelle
-                                            <i class="mdi mdi-file-check btn-icon-append"></i></button></td>
-                                </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/images/faces/face1.jpg" class="mr-2" alt="image"> @item.BlogTitle
+                                </td>
+                                <td> @item.BlogCreateDate </td>
+                                <td>
+                                    @item.Category.CategoryName
+                                </td>
+                                <td>
+                                    @if (item.BlogStatus)
+                                    {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-success">Aktif</a> }
+                                    else
+                                    {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-danger">Pasif</a>}
+                                </td>
+                                <td>
+                                    <a href="/Writer/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-outline-danger">
+                                        Sil
+                                        <i class="mdi mdi-delete-sweep"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="/Writer/BlogEdit/@item.BlogID" class="btn btn-gradient-dark btn-icon-text">
+                                        Güncelle
+                                        <i class="mdi mdi-file-check btn-icon-append"></i>
+                                    </a>
+                                </td>
+                            </tr>
                             }
                         </tbody>
                     </table>

@@ -3,34 +3,50 @@
     ViewData["Title"] = "BlogListByWriter";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
-
-<h1>Yazarın Blogları</h1>
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Blog Başlığı</th>
-        <th>Oluşturma Tarihi</th>
-        <th>Kategori</th>
-        <th>Durumu</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-<tr>
-    <td>@item.BlogID</td>
-    <td>@item.BlogTitle</td>
-    <td>@item.BlogCreateDate</td>
-    <td>@item.Category.CategoryName</td>
-    <td>
-        @if (item.BlogStatus)
-        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-success">Aktif</a> }
-        else
-        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-secondary">Pasif</a>}
-    </td>
-    <td><a href="/Writer/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-outline-danger">Sil</a></td>
-    <td><a href="/Writer/BlogEdit/@item.BlogID" class="btn btn-outline-warning">Güncelle</a></td>
-</tr>
-    }
-</table>
-
-<a href="/Writer/BlogAdd" class="btn btn-outline-success"><h3>Blog Oluştur</h3></a>
-
+<div class="row">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Blog Yazıları</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Blog Başlığı</th>
+                                <th>Oluşturma Tarihi</th>
+                                <th>Kategori</th>
+                                <th>Durumu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img src="assets/images/faces/face1.jpg" class="mr-2" alt="image"> @item.BlogTitle
+                                    </td>
+                                    <td> @item.BlogCreateDate </td>
+                                    <td>
+                                        @item.Category.CategoryName
+                                    </td>
+                                    <td>
+                                        @if (item.BlogStatus)
+                                        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-success">Aktif</a> }
+                                        else
+                                        {<a href="/Writer/ChangeStatusBlog/@item.BlogID" onclick="return confirm('Emin Misiniz?');" class="badge badge-gradient-danger">Pasif</a>}
+                                    </td>
+                                    <td><a href="/Writer/DeleteBlog/@item.BlogID" onclick="return confirm('Silmek İstediğinize Emin Misiniz?');" class="btn btn-outline-danger">Sil
+                                        <i class="mdi mdi-delete-sweep"></i></a></td>
+                                    <td><button href="/Writer/BlogEdit/@item.BlogID" class="btn btn-gradient-dark btn-icon-text">Güncelle
+                                            <i class="mdi mdi-file-check btn-icon-append"></i></button></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/Writer/BlogAdd" class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn"><h3>Blog Oluştur</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

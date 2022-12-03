@@ -33,15 +33,11 @@ namespace NetCoreWebApp1.Controllers
         //Writer Layout Parçaları
         public PartialViewResult WriterSidebar()
         {
-            var _userMail = User.Identity.Name;
-            var values = wm.GetListAll(x => x.WriterMail == _userMail);
-            return PartialView(values);
+            return PartialView();
         }
         public PartialViewResult Writernavbar()
         {
-            var _userMail = User.Identity.Name;
-            var values = wm.GetListAll(x => x.WriterMail == _userMail);
-            return PartialView(values);
+            return PartialView();
         }
 
         //Yazara Ait Blogların listelendiği sayfa

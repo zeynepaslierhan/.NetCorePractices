@@ -1,0 +1,7 @@
+﻿@model List<Writer>
+
+@foreach (var item in Model)
+{
+    <span class="font-weight-bold mb-2">@item.WriterName</span>
+    <span class="text-secondary text-small">@item.WriterMail</span>
+    }

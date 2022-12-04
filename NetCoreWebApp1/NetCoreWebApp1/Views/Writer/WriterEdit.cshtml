@@ -1,0 +1,53 @@
+﻿@model EntityLayer.Concrete.Writer
+@{
+    ViewData["Title"] = "BlogEdit";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Blog Yazısını Güncelle</h4>
+            <p class="card-description"> </p>
+            @using (Html.BeginForm("WriterEdit", "Writer", FormMethod.Post))
+            {
+                <form class="forms-sample">
+                    @Html.HiddenFor(x => x.WriterId, new { @class = "form-control" })
+                    <div class="form-group">
+
+                        <label>Yazar Adı:</label>
+                        @Html.TextBoxFor(x => x.WriterName, "", new { @class = "form-control", @placeholder = "Yazar Adı" })
+                        @Html.ValidationMessageFor(x => x.WriterName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+
+                        <label>Yazar Mail:</label>
+                        @Html.TextBoxFor(x => x.WriterMail, "", new { @class = "form-control", @placeholder = "Yazar Mail" })
+                        @Html.ValidationMessageFor(x => x.WriterMail, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+
+                        <label>Şifreniz:</label>
+                        @Html.TextBoxFor(x => x.WritePassword, "", new { @class = "form-control", @placeholder = "Şifreniz" })
+                        @Html.ValidationMessageFor(x => x.WritePassword, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Fotoğraf Yükle</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled="" placeholder="Fotoğraf Yükle">
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">
+                        Güncelle
+                        <i class="mdi mdi-file-check"></i>
+                    </button>
+                    <a href="/Writer/Index" class="btn btn-light">Cancel</a>
+                </form>
+            }
+        </div>
+    </div>
+</div>
+

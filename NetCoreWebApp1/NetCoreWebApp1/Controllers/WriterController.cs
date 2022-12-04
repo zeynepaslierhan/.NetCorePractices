@@ -162,5 +162,41 @@ namespace NetCoreWebApp1.Controllers
             bm.TUpdate(blog);
             return RedirectToAction("BlogListByWriter");
         }
+        
+        [HttpGet]
+        public IActionResult WriterEdit()
+        {
+
+            var _userMail = User.Identity.Name;
+            var _userId = c.writers.Where(x => x.WriterMail == _userMail).Select(y => y.WriterId).FirstOrDefault();
+
+            var values = wm.TGetById(_userId);
+            return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult WriterEdit(Writer w)
+        {
+            WriterValidator wv = new WriterValidator();
+            ValidationResult result = wv.Validate(w);
+
+            var _userMail = User.Identity.Name;
+            var _userId = c.writers.Where(x => x.WriterMail == _userMail).Select(y => y.WriterId).FirstOrDefault();
+            if (result.IsValid)
+            {
+
+                w.WriterId = _userId;
+                wm.TUpdate(w);
+                return RedirectToAction("Index", "Writer");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+                return View();
+            }
+        }
     }
 }

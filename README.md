@@ -10,9 +10,8 @@
 
 Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin gelişme aşamalarını, kendilerine ait history'lerden inceleyebilir, README.md dosyalarından bilgi edinebilirsiniz.
 
- :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için:
+ :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için [.NetCoreArchive](https://github.com/zeynepaslierhan/.NetCoreArchive) repo'suna bakabilirsiniz.
 
-[![ReadMe Kartı](https://github-readme-stats.vercel.app/api/pin/?username=zeynepaslierhan&repo=.NetCoreArchive)](https://github.com/zeynepaslierhan/.NetCoreArchive)
 
 ---
 
@@ -28,8 +27,9 @@ Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin 
 
 1.  [ 🎬 Blog Sitesi Oluşturma](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG)
 
-     **Proje türü:** ASP.NET Core Web App (Model-View-Controller) // .Net Core 5.0
-
+     > **Proje türü:** ASP.NET Core Web App (Model-View-Controller) // .Net Core 5.0
+     
+     
      > **Amacı:** Temiz koda ve n katmanlı mimariye sahip bir blog sitesi oluşturmaktır. Admin, Yazar, kullanıcı gibi panellere de sahip... [(*dahası için 💻...*)](https://github.com/zeynepaslierhan/.NetCorePractices/tree/main/NetCoreWebApp1)
 
 

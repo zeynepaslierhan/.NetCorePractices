@@ -215,9 +215,117 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 10.  UI Katmanında: Layout'un alt kısmı yani partial3 düzenlemeleri bağladı. Buradaki kısımlar için önceden oluşturulmuş viewcomponentler kullanıldı.
 
+[**.Net Core ile Blog Sitesi Oluşturma / PART 10**](https://www.youtube.com/watch?v=lrMMZUwg32k&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&t=624s&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+
+1. UI Katmanında: Login işlemi başlangıcı yapıldı. Startup dosyasında düzenlemeler yapıldı. (Yapıldıktan sonra sayfada göründüğü gibi bir hata oluyor, diğer işlemler yapıldığında geçecek.)
+
+2. UI Katmanında: LoginController düzenlemeleri yapıldı.
+
+3. UI Katmanında: WriterController oluşturuldu. Login işlemi gerçekleşince gidilmesi gereken sayfanın dosyaları hazırlandı.(LoginController içerisindeki 2. fonksiyonun dönüş değeri olmadığından hata veriyordu. o Hata düzenleni Writer/Index oluşturuldu.)
+
+4. UI Katmanında: LoginController düzenlemeleri yapıldı.
+
+5. UI Katmanında: Login/Index.cshtml dosyası düzenlendi. Gerekli input bilgilerin sorgulanabilmesi için Writer entity'sine uygun isimlendirme yapıldı.
+
+6. UI Katmanında: LoginController düzenlemeleri yapılıp kontrol edildi.
+
+7. Login işlemi için Writer bilgisi eklenip proje kontrol edildi. ( Şuan login işlemi yapmaan hiçbir sayfaya yönlendirilmiyor, Giriş yap gibi login gerekmemesi gereken kısımlar ilerleyen zamanda düzenlenecek)
+
+8. UI Katmanında: Writer/Index.cshtml düzenlendi. Yazar paneli için kullanılacak tema dosyasının içeriği kendi projemize uyarlandı. WriterLayout oluşturulup gerekli düzenlemeler yapıldı.(Bu aşamada Writer sayfasının kontrolü için sürekli login işlemi yapmamak adına WriterController'a [AllowAnnonymous] özelliği verildi.)
+
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 11**](https://www.youtube.com/watch?v=N8ZChC1COdU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+
+1. UI Katmanında : WriterLayout' da düzenlendi. 
+
+2. UI Katmanında: WriterLayout partialView'lara ayrılmaya başladı. Bunun için WriterController kullanıldı.
+
+3. UI Kamtanında: WriterLayout için ikinci partialView oluşturuldu. Bunun için WriterController kullanıldı.
+
+4. UI Katmanında: ViewComponents klasörü düzenlendi.  İlgili klasör yolunun sıkıntı yaratabileceği yerler kontrol edildi. (Kullanılmayan kodlar, klasörler, dosyalar sonrasında silinecek)
+
+5. UI Katmanında: WriterLayout içerisine ViewComponentler oluşturulmaya başlandı. Yazarın mesajlarını gördüğü kısım için WriterMessageNotification class'ı oluşturulup WriterLayout'a eklendi.
+
+6. UI Katmanında: WriterLayout içerisine 2. ViewComponent oluşturuldu. Yazarın bildirimlerini gördüğü kısım için WriterNotification class'ı oluşturulup WriterLayout'a eklendi.
+
+7.  UI Katmanında: Yazarın kendi bloglarını listelediği ve listelendiği yerden yönetildiği sayfa için taslak hazırlığı başlandı. WriterController'a BlogListByWriter eklenip View oluşturuldu.
+
+8. Veritabanına veri girişi yapıldı.
+
+9. DataAccess Katmanında: EFBlogRepository içerisine yazar bilgilerine göre kategori bilgisi dahil  blog bilgilerini alan fonksiyon eklendi.
+
+10. Business Katmanında : DataAcces katmanında oluşturulan fonksiyon için IBlogService ve BlogManager güncellendi. 
+
+11. DataAcces Katmanında: Oluşturulan yeni fonskiyon IBlogDal'a da eklendi.
+
+12. UI Katmanında: WriterController içerisine BlogListByWriter sayfası için oluşturulan fonksiyon eklendi.(şimdilik Veritabanında kayıtlı olan Writer için default olarak 7 id'li yazar için sıralama yapıyor.)
+
+13. UI Katmanında: BlogListByWriter View düzenlendi.
+
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 12**](https://www.youtube.com/watch?v=FNFHajNJ1MA&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=12&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+
+* Yeni Blog Oluşturma 
+
+1.  UI Katmanında: WriterController içerisine Blog Crud işlemleri için gerekli fonksiyonlar eklenmeye başladı. İlk olarak yeni blog oluşturulmak için BlogAdd action'ı oluştulup View eklendi.
+
+2. UI Katmanında: BlogAdd View'ı düzenlendi.
+
+3. Bussines Katmanında: Yeni blog oluştururken dikkat edilmesi gereken kurallar BlogValidator içerisinde tanımlandı.
+
+4. UI Katmanında: Oluşturulan BlogValidator WriterController içerisindeki BlogAdd action'ına eklendi. 
+
+5. UI Katmanında: BlogAdd  View içerisine Validation mesajları eklendi.
+
+* Blog Silme işlemi
+
+1. UI Katmanında: WriterController içerisine DeleteBlog fonksiyonu eklenip BlogListByWriter View'ı güncellendi.
+
+* Blog Güncelleme
+
+1. UI Katmanında: WriterController içerisine BlogEdit fonksiyonu eklenip View oluşturuldu.
+
+* Blog Statüsünü Değiştirme
+
+1. UI Katmanında: WriterController içerisine aynı DeleteBlog mantığında çalışan bir fonksiyon eklenip BlogListByWriter güncellendi.
+
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 13**](https://www.youtube.com/watch?v=y8Tlqkaxvhg&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=13&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+
+1. UI katmanında: Writerlayout düzenlendi.
+
+2. UI katmanında: Yazar paneline giriş yapan kişinin bilgileri alındı. Bunun için WriterController ve Index View düzenlendi.
+
+3. Business katmanında: yazar paneline giriş yapan kişinin diğer bilgilerine ulaşmak için dataacces katmanında olan parametreli GetListAll methodu business katmanına eklendi.
+
+4. UI Katmanında: WriterController içerisi düzenlenip giriş yapan kişinin mail adresi dışındaki verilere ulaşıldı. Index sayfasına yansıtıldı. 
+
+(Business katmanında yapılan değişikliklerden sonra ilgili kütüphane eklenmediği için hata alındı. İlgili kütüphane eklendiğinde hata çözüldü.)
+
+5. UI katmanında: WriterController içerisindeki methodlara, giriş yapan kişinin hangi verileri lazımsa onlar eklendi.
+
+6. UI katmanında: Yazar panelindeki bloglistbywriter, blogadd ve blogedit sayfalarının önyüzü düzenlendi. (Writer teması kullanıldı.)
+
+7. UI Katmanında: BlogListbyWriter sayfasındaki güncelle butonundaki hata düzenlendi.
+
+8. UI Katmanında: Blogadd ve Blogedit sayfalarına CK editör eklendi.
+
+
+[**.Net Core ile Blog Sitesi Oluşturma / PART 14**](https://www.youtube.com/watch?v=sj5fI6eWdaM&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=14&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+
+1. Projedeki genel eksiklikler.
+
+2. UI katmanında: Ck Editör ile yazılan yazıların düzgün yansıtılması için BlogReadAll ve Blog/Index içerisi düzenlendi.
+
+3.  UI katmanında: CommentListByBlog ViewComponent'i düzenlendi. Blog yazısı için ilgili bir yorum yoksa "İlk Yorumu Sen Yaz " yazısı eklendi.
+
+4. UI Katmanında: LoginController düzenlendi. LogOut/SignOut eklendi. bunun için WriterLayout düzenlendi.
+
+5. UI katmanında: WriterLayout içerisinde kullanılan partialView'lar içerisine ViewComponent eklendi. Profil bilgileri layout içerisinde yansıtıldı.
+
+6. UI Katmanında: WriterController Düzenlendi. Yazar bilgilerinin güncellenme işlemi Blog yazısını güncellemeye benzediği için taslak olarak BlogEdit kodları kullanıldı. Yazarın email adresi değiştiğinde güncelliyor fakat Writer/Index sayfasında artık giriş yapılan kişinin email adresi sistemde olmadığından boş sayfa gönderiyor. Bunu ilerki videolarda düzelteceğim.
+
 ***diğer kısımları gelecek...***
-
-
 
 <img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Kaynak%C3%A7a.gif" align="right" height="150">
 

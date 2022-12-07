@@ -42,6 +42,8 @@ Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçil
 - [x]  İlgili blog yazısının yorumu yoksa "İlk Yorumu Sen Yaz" yazısı görülmeli.
 - [x]  WriterLayout Profil bilgileri PartialView içerisinde düzgün gösterilmiyor.
 - [ ]  Yazar panelinden email adresi güncellendiğinde boş sayfa döndürüyor.
+- [ ]  Yazarın blog yazısı eklediği kısımdaki kelime kısıtlama kısmı doğru çalışmıyor. ( CK Editör'den dolayı html kodları içeriği için karakter sayısı düzgün çalışmıyor)
+- [ ]  Yazar profil resmi ve Blog yazısı fotograflarının yüklenip güncellenmesi
 
 ## Youtube Kanalından İzleyebilirsiniz 📺
 

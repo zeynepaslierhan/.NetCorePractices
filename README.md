@@ -6,11 +6,14 @@
   <br>
 </h1>
 
-<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Giri%C5%9F.gif" align="right" height="200">
+<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Giri%C5%9F.gif" align="right" height="300">
 
 Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin gelişme aşamalarını, kendilerine ait history'lerden inceleyebilir, README.md dosyalarından bilgi edinebilirsiniz.
 
- :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için [.NetCoreArchive](https://github.com/zeynepaslierhan/.NetCoreArchive) repo'suna bakabilirsiniz.
+ :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için:
+ 
+ 
+[![ReadMe Kartı](https://github-readme-stats.vercel.app/api/pin/?username=zeynepaslierhan&repo=.NetCoreArchive)](https://github.com/zeynepaslierhan/.NetCoreArchive)
 
 
 ---

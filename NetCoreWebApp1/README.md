@@ -10,7 +10,7 @@
 .Net Core konusunda gelişmek için  Murat Yücedağ'ın .Net Core Proje kampını baz alarak çalıştım. 
 Murat Yücedağ'ın projesinde temiz kod kullanımı ve  n katmanlı mimariyle oluşturulması .NET Core konusunda sağlam bir temel atmamı sağladı.
 
-## N Katmanlı Mimari
+## N Katmanlı Mimari 🖋️
 
 Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçilirken .NetCore projesi yapıyorsanız .Net core library’i seçtiğinizden emin olun.
 
@@ -22,7 +22,7 @@ Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçil
 
 **Presentation Layer,** sunum UI işlemleri yapılır. diğer deyişle kullanıcı arayüzüdür.
 
-### Katmanlar Arası Referans Alımı
+### Katmanlar Arası Referans Alımı 🖋️
 
 **Entity Layer:** katmanlardan referans almaz çünkü sadece entity’ler (varlıklar) burada oluşturulur ve bunlar diğer katmanlarda kullanılır.
 
@@ -32,15 +32,27 @@ Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçil
 
 **Presentation Layer:** Entity, Data Acces, Business Layer. Validasyon kontrolleri, Crud işlemleri ve gereken parametrelerde class’larla alınacağı için entity layer referans alınır.
 
-## Youtube Kanalından İzleyebilirsiniz
+
+<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Giri%C5%9F.gif" align="right" height="200">
+
+
+## Çözülecek Hatalar ve Yapılacaklar ⁉️
+
+- [x]  CK editör ile kaydedilen yazıların blog sayfasında html kodlarıyla görünüyor.
+- [x]  İlgili blog yazısının yorumu yoksa "İlk Yorumu Sen Yaz" yazısı görülmeli.
+- [x]  WriterLayout Profil bilgileri PartialView içerisinde düzgün gösterilmiyor.
+- [ ]  Yazar panelinden email adresi güncellendiğinde boş sayfa döndürüyor.
+
+## Youtube Kanalından İzleyebilirsiniz 📺
 
 Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.com/channel/UCjyA7k3irGFgjYkuH-QVhfw) youtube kanalıma ekledim. İlerleyen zamanlarda diğer partları yayınlayacağım.
 
-İzlemek için: [.Net Core Practices](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG)
+ 🎬 İzlemek için: [.Net Core Practices](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG)
+ 
+<a href=".Net Core Practices](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG"><img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/.Net%20Core%20Youtube%20k%C3%BC%C3%A7%C3%BCk%20resim.jpg" width="300" alt=".NetCoreWebApp Practices"/></a>
 
-<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/.Net%20Core%20Youtube%20k%C3%BC%C3%A7%C3%BCk%20resim.jpg" width="300" alt=".NetCoreWebApp Practices"/>
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 1**](https://www.youtube.com/watch?v=6wiOt8ZcPNY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=1) *içeriği*:
+[ 📌**.Net Core ile Blog Sitesi Oluşturma / PART 1**](https://www.youtube.com/watch?v=6wiOt8ZcPNY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=1) *içeriği*:
 
 1. Katmanlar oluşturuldu
 
@@ -52,7 +64,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 5. Migrations ve veritabanı işlemleri başladı.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 2**](https://www.youtube.com/watch?v=Y7pg4vaoNdY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=2) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 2**](https://www.youtube.com/watch?v=Y7pg4vaoNdY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=2) *içeriği*:
 
 1. Data Acces Layerda: Blog ve Category arasında ilişki kuruldu, migration işlemlerinden sonra veritabanına yansıtıldı.
 
@@ -70,7 +82,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 8. Veritabanında Categories tablosuna örnek veriler eklendi.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 3**](https://www.youtube.com/watch?v=J1rb2JNKTYU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=3) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 3**](https://www.youtube.com/watch?v=J1rb2JNKTYU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=3) *içeriği*:
 
 1. Category view içersinde görünür bir sonuç elde etmek için tablo bilgilerine erişim sağlanılıyor. (ilerde bu kısmı kullanmayacağız amaç denemek)
 2. UI katmanında (Projenin ismi olan katman): Tema işlemleri başladı. UserLayout oluşturuldu.Hazır alınan temanın klasör uzantıları düzenlendi. Kullanacağımız layout partialview bölümlerine ayrıldı. 
@@ -80,7 +92,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 6. Busines Layerda: Blog yazılarına ait Kategorilerin isimlerini görüntülemek için IBlogServide'e  yeni fonksiyon eklendi. Dolayısıyla BlogManager da düzenlendi.
 7. UI katmanında (Projenin ismi olan katman): BlogControllerda istenilen veriyi almak için yeni oluşturulan fonksiyondan alınan veriler kullanıldı.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 4**](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 4**](https://www.youtube.com/watch?v=ngBsgrw2vQA) *içeriği*:
 
 1. UI katmanında (Projenin ismi olan katman): BlogController içerisine BlogReadAll action'ı eklendi. 
 2. Busines Layerda: View oluşturulmadan önce BlogId değerlerine göre blog bilgilerini almak için IGenericDal'a yeni fonksiyon girildi. Dolayısıyla GenericRepository düzenlendi.
@@ -90,7 +102,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 6. UI katmanında (Projenin ismi olan katman): CommentController oluşturuldu. Comment kısmı partial viewlar ile düzenlendi.(2 parçaya ayrıldı)
 7. UI katmanında (Projenin ismi olan katman): BlogReadAll'da comment kısmının çıkmasını istediğimiz kısımlar ayarlandı.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 5**](https://www.youtube.com/watch?v=XfMq90N7OD0) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 5**](https://www.youtube.com/watch?v=XfMq90N7OD0) *içeriği*:
 
 1. BusinessLayerda: ICommentService oluşturuldu. ICommentService'dan kalıtım alınarak CommentManager oluşturuldu.
 
@@ -120,7 +132,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 14. UI Layerda:  Category kısmı için de View Component oluşturulmaya başlandı. Comment için yapılan işlemlerin aynısı yapıldı.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 6**](https://www.youtube.com/watch?v=cQgKav7Y4QU) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 6**](https://www.youtube.com/watch?v=cQgKav7Y4QU) *içeriği*:
 
 1. UI katmanında: UserLayout'da kullanılan PartialView düzenlendi.
 
@@ -143,7 +155,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 11. UI Layer işlemleri, Register View'da düzenlemeler yapıldı. (Şifreyi iki defa kontrol etme kısmını ilerde göstereceğim. İsterseniz githubdan projenin ilerlemiş aşamalarına bakabilirsiniz.)
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 7**](https://www.youtube.com/watch?v=uCEO-MtshnU) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 7**](https://www.youtube.com/watch?v=uCEO-MtshnU) *içeriği*:
 
 1. UI katmanında: Login Controller Oluşturulup Login View sayfası eklendi. İstenilen Login şablonu View'a eklenip gerekli düzenlemeler yapıldı. ( Bu kısmın işlemleri ilerleyen zamanlarda yapılacak)
 
@@ -175,7 +187,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 14. UI Katmanında: WriterLastBlog View'ında kullandığımız cshtml kodları BlogLastThreePosts 'a aktarılıp düzenlendi.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 8**](https://www.youtube.com/watch?v=wMxm9SyOpEA) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 8**](https://www.youtube.com/watch?v=wMxm9SyOpEA) *içeriği*:
 
 1. Entity Katmanında: NewsLetter class'ı oluşturulup içeriği düzenlendi.
 
@@ -193,7 +205,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 8. Oynatma Serisinin 7. PARTINDA:  BlogReadAll sayfasındaki yazara ait son postların istenildiği gibi çalışmadığını görünce düzenledim. Bu kısmı 7. partta yaptığım için o videonun sonuna ekledim. 
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 9**](https://www.youtube.com/watch?v=OY0v4V537hc) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 9**](https://www.youtube.com/watch?v=OY0v4V537hc) *içeriği*:
 
 1. Business Katmanında: Generic hale getirmek için işlemler başladı. IGenericService oluşturulup diğer interface'ler için uygulandı.
 
@@ -215,7 +227,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 
 10.  UI Katmanında: Layout'un alt kısmı yani partial3 düzenlemeleri bağladı. Buradaki kısımlar için önceden oluşturulmuş viewcomponentler kullanıldı.
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 10**](https://www.youtube.com/watch?v=lrMMZUwg32k&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&t=624s&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 10**](https://www.youtube.com/watch?v=lrMMZUwg32k&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&t=624s&ab_channel=SoftwareDeveloperArchive) *içeriği*:
 
 1. UI Katmanında: Login işlemi başlangıcı yapıldı. Startup dosyasında düzenlemeler yapıldı. (Yapıldıktan sonra sayfada göründüğü gibi bir hata oluyor, diğer işlemler yapıldığında geçecek.)
 
@@ -234,7 +246,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 8. UI Katmanında: Writer/Index.cshtml düzenlendi. Yazar paneli için kullanılacak tema dosyasının içeriği kendi projemize uyarlandı. WriterLayout oluşturulup gerekli düzenlemeler yapıldı.(Bu aşamada Writer sayfasının kontrolü için sürekli login işlemi yapmamak adına WriterController'a [AllowAnnonymous] özelliği verildi.)
 
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 11**](https://www.youtube.com/watch?v=N8ZChC1COdU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 11**](https://www.youtube.com/watch?v=N8ZChC1COdU&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=11&ab_channel=SoftwareDeveloperArchive) *içeriği*:
 
 1. UI Katmanında : WriterLayout' da düzenlendi. 
 
@@ -263,7 +275,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 13. UI Katmanında: BlogListByWriter View düzenlendi.
 
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 12**](https://www.youtube.com/watch?v=FNFHajNJ1MA&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=12&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 12**](https://www.youtube.com/watch?v=FNFHajNJ1MA&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=12&ab_channel=SoftwareDeveloperArchive) *içeriği*:
 
 * Yeni Blog Oluşturma 
 
@@ -290,7 +302,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 1. UI Katmanında: WriterController içerisine aynı DeleteBlog mantığında çalışan bir fonksiyon eklenip BlogListByWriter güncellendi.
 
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 13**](https://www.youtube.com/watch?v=y8Tlqkaxvhg&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=13&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 13**](https://www.youtube.com/watch?v=y8Tlqkaxvhg&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=13&ab_channel=SoftwareDeveloperArchive) *içeriği*:
 
 1. UI katmanında: Writerlayout düzenlendi.
 
@@ -311,7 +323,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 8. UI Katmanında: Blogadd ve Blogedit sayfalarına CK editör eklendi.
 
 
-[**.Net Core ile Blog Sitesi Oluşturma / PART 14**](https://www.youtube.com/watch?v=sj5fI6eWdaM&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=14&ab_channel=SoftwareDeveloperArchive) *içeriği*:
+[📌 **.Net Core ile Blog Sitesi Oluşturma / PART 14**](https://www.youtube.com/watch?v=sj5fI6eWdaM&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=14&ab_channel=SoftwareDeveloperArchive) *içeriği*:
 
 1. Projedeki genel eksiklikler.
 

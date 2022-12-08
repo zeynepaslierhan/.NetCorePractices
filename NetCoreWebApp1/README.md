@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
+  <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
   <br>
   Blog Sitesi Projesi / .Net Core 5.0
   <br>
@@ -33,7 +33,7 @@ Bu mimari, projeye eklenen class libraryler ile sağlanır. Class library seçil
 **Presentation Layer:** Entity, Data Acces, Business Layer. Validasyon kontrolleri, Crud işlemleri ve gereken parametrelerde class’larla alınacağı için entity layer referans alınır.
 
 
-<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Giri%C5%9F.gif" align="right" height="200">
+<img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/Giri%C5%9F.gif" align="right" height="200">
 
 
 ## Çözülecek Hatalar ve Yapılacaklar ⁉️
@@ -54,7 +54,7 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 <a href=".Net Core Practices](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG"><img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/.Net%20Core%20Youtube%20k%C3%BC%C3%A7%C3%BCk%20resim.jpg" width="300" alt=".NetCoreWebApp Practices"/></a>
 
 
-[ 📌**.Net Core ile Blog Sitesi Oluşturma / PART 1**](https://www.youtube.com/watch?v=6wiOt8ZcPNY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=1) *içeriği*:
+[ 📌 **.Net Core ile Blog Sitesi Oluşturma / PART 1**](https://www.youtube.com/watch?v=6wiOt8ZcPNY&list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG&index=1) *içeriği*:
 
 1. Katmanlar oluşturuldu
 
@@ -349,3 +349,13 @@ Bu çalışmamı aşama aşama [Software Developer Archive](https://www.youtube.
 1. [Murat Yücedağ Proje Kampı](https://www.youtube.com/playlist?list=PLKnjBHu2xXNNkinaVhPqPZG0ubaLN63ci)
 2. [Samet Akça ve Rümeysa Çağlar'ın projesi](https://github.com/smtdeveloper/BlogProjeKampi)
 3. [Atilla Akalay'ın projesi](https://github.com/atillakalay/DotNetCoreCamp)
+
+---
+
+<img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/Be%C4%9FenilerimArtm%C4%B1%C5%9Ft%C4%B1r.gif" align="left" height="150">
+
+## İletişim :telephone_receiver:
+
+:e-mail:  softwaredeveloperarchive@gmail.com
+
+:iphone: [@softwaredeveloperarchive](https://www.instagram.com/softwaredeveloperarchive/)

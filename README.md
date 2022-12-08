@@ -1,16 +1,19 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
+  <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
   <br>
   .Net Core Practices
   <br>
 </h1>
 
-<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Giri%C5%9F.gif" align="right" height="200">
+<img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/Giri%C5%9F.gif" align="right" height="300">
 
 Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin gelişme aşamalarını, kendilerine ait history'lerden inceleyebilir, README.md dosyalarından bilgi edinebilirsiniz.
 
- :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için [.NetCoreArchive](https://github.com/zeynepaslierhan/.NetCoreArchive) repo'suna bakabilirsiniz.
+ :dizzy: Bu projede ihtiyaç duyulan işlemlerin nasıl yapıldığını incelemek için:
+ 
+ 
+[![ReadMe Kartı](https://github-readme-stats.vercel.app/api/pin/?username=zeynepaslierhan&repo=.NetCoreArchive)](https://github.com/zeynepaslierhan/.NetCoreArchive)
 
 
 ---
@@ -33,7 +36,7 @@ Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin 
      > **Amacı:** Temiz koda ve n katmanlı mimariye sahip bir blog sitesi oluşturmaktır. Admin, Yazar, kullanıcı gibi panellere de sahip... [(*dahası için 💻...*)](https://github.com/zeynepaslierhan/.NetCorePractices/tree/main/NetCoreWebApp1)
 
 
-<img src="https://github.com/zeynepaslierhan/.NetCorePractices/blob/main/img/Readme/Kaynak%C3%A7a.gif" align="right" height="150">
+<img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/Kedilerim.gif" align="right" height="150">
 
 
 ## Kaynakça :card_file_box:

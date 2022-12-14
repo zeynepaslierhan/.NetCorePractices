@@ -28,7 +28,7 @@ Yaptığım .Net Core MVC projeler bu repo'da yer almaktadır. İlgili projenin 
 
 ## .Net Core Practices İçeriği
 
-1.  [ Blog Sitesi Oluşturma, , :clapper: *video* video ](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG)
+1.  [ Blog Sitesi Oluşturma, , :clapper: *video*.. ](https://www.youtube.com/playlist?list=PLjMBQHLzNCzaCU6pl57ik1tHxBB0_XifG)
 
      > **Proje türü:** ASP.NET Core Web App (Model-View-Controller) // .Net Core 5.0
      
